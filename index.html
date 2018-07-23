@@ -11,27 +11,32 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<!-- Google Font Rubik  -->
-<link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto|Sunflower:300" rel="stylesheet">
 	<!-- Main style  -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<div class="col-izquierda">
+<section>
+<div class="col-izquierda col-lg-4 col-md-4 col-sm-12">
 	<div class="row">
-		<h1>CREA UN NUEVO TWEET!!</h1>
-			<div class="crea-tweet">
-				<div class="imagen-perfil"></div>
-				<button class="button-photo">Buscar imagen Perfil</button>
-				<div class="name"></div>
-				<div class="ingresa-text"></div>
-				<<button class="button-createtweet">Crear nuevo tweet</button>
-			</div>
+		<h1>¡¡CREA UN NUEVO TWEET!!</h1>
+			<form class="crea-tweet">
+				<div class="imagen-perfil col-lg-4"></div>
+
+				<form><p>Nombre:</p><br><input type="text" name="firstname"><br>
+					<button class="button-photo col-lg-4">Buscar imagen Perfil</button><br>
+              Comentario:<br><textarea name="texto" rows="4" cols="20" style="height: 178px; width: 382px;"></textarea><br>
+             <button class="button-createtweet">Crear nuevo tweet</button>
+
+			</form>
+			
 	</div>
 </div>
+</section>
 
-<div class="col-derecha">
+
+<section>
+<div class="col-derecha col-lg-6 col-md-4 col-sm-12">
 	<div class="row2">
 		<div class="new-tweet">
 			<div class="photo-tweet"></div>
@@ -48,6 +53,7 @@
 
 	</div>
 </div>
+</section>
 	
 </body>
 </html>
