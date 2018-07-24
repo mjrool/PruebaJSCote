@@ -2,20 +2,15 @@
 
 $(function(){
 
+// CORAZON LIKE	
 
-
-	$('.glyphicon_glyphicon-heart').click(function(e){
-		e.preventDefault();
-		$(this).toggleClass('glyphicon_glyphicon-heart--red');
-	})
-
-	$('.glyphicon_glyphicon-heart').on('click', function(e){
-
+	$('.new-tweet').on('click', '.icon-heart-tweet', function(e){
+		$(this).toggleClass('icon-heart-tweet--red');
 		e.preventDefault();
 		e.stopPropagation();
-	})
+	});
+
+	
 
 
-
-
-})
+});
