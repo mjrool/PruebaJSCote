@@ -366,7 +366,7 @@ textarea{
 	background-color: white;
 	padding: 10px;
 	border-radius: 8px;
-	margin-bottom: 60%;
+	margin-bottom: 20px;
 	margin-top: 20px;
 	border: 1px solid #ccc;
 	float: left;
@@ -418,8 +418,8 @@ i{
 		background-color: white;
 		padding: 10px;
 		border-radius: 8px;
-		margin-bottom: 60%;
-		margin-top: 0px;
+		margin-bottom: 20px;
+		
 		border: 1px solid #ccc;
 		float: left;
 		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
@@ -467,8 +467,8 @@ i{
 		background-color: white;
 		padding: 10px;
 		border-radius: 8px;
-		margin-bottom: 60%;
-		margin-top: 0px;
+		margin-bottom: 20px;
+		
 		border: 1px solid #ccc;
 		float: left;
 		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
@@ -516,8 +516,8 @@ i{
 		background-color: white;
 		padding: 10px;
 		border-radius: 8px;
-		margin-bottom: 60%;
-		margin-top: 10px;
+		margin-bottom: 20px;
+		
 		border: 1px solid #ccc;
 		float: left;
 		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
