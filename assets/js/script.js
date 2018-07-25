@@ -31,7 +31,10 @@ $(function(){
 			$('.col-derecha').after(post);
 			$('#imagen__perfil').attr('src','' );
 		}
-	})	
+	});
+
+
+
 
 	$('#imagen__user').on('change', function(){
 		var file =document.getElementById('imagen__user').files[0];
@@ -44,27 +47,51 @@ $(function(){
 		} else {
 			return;
 		}
+	});	
 
-	})
+});	
 
-// CORAZON LIKE	
-
-
-	$('body')on.('click','icon-heart-tweet' function(){
-		$(this).children('i').css('color','red');
-		numero = parseInt($(this).text())
-		numero = children('span').text(numero);
-	})
+		// CORAZON LIKE	
 
 
-	
-	// NUEVO TWEET
+// 	$('.new__tweet')on.('click','icon-heart-tweet' function(){
+// 		$(this).children('i').css('color','red');
+// 		numero = parseInt($(this).text())
+// 		numero = children('span').text(numero);
+// 	})
 
-	$(function(){
-		
-	})
+// 	});
 
-	
-	
 
-});
+
+
+// 	// BORRAR TEXTO
+
+// 	$('form').on('submit', function (e){
+// 		$('form')[0].reset();
+// 		$('.comentario__tweet').val('')
+// 	});
+
+// 	// BORRAR TWEET
+
+// 	$('body').on('click', '.delete-text__tweet', function(){
+// 		swal({
+// 			title: "Quieres eliminar tweet?",
+// 			text: "estas segur@?"
+// 			icon: "warning",
+// 			buttons: true,
+// 			dangerMode: true,
+// 		})
+// 		.then((willDelete)=> {
+// 			if (willDelete) {
+// 				$(this).parent().parent().fadeOut("slow").remove();
+// 			swal("Post eliminado",{
+// 				icon: "success",
+// 			});
+// 			}else{
+// 				swal("No Eliminar");
+// 			}	
+// 			}
+// 		});
+// }):
+
