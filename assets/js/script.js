@@ -10,7 +10,24 @@ $(function(){
 		e.stopPropagation();
 	});
 
-	
+	// INFO FORMULARIO	
 
+	$('form').submit(function (e){
+		event.preventDefault();
+		var formData = {
+			userName: $('#user__name').val(),
+			userEscrito: $('.comentario__text').val()
+
+		};
+	});
+
+	// NUEVO TWEET
+
+	$(function(){
+		
+	})
+
+	
+	
 
 });

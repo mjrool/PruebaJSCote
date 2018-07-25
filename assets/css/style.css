@@ -1,8 +1,10 @@
+/* GENERAL */
+
 h1{
 	font-size: 2em;
 	color: white;
 	font-family: 'Sunflower', sans-serif;
-	margin-top: 20%;
+	
 }
 
 body{
@@ -10,20 +12,47 @@ body{
 	background-color: #A9ECED;
 }
 
-.row{
-	padding-left: 40px;
-	margin: 10px;
+button{
+	background-color: #FFBC2C;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	font-family: 'Sunflower', sans-serif;
 }
 
+input{
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+textarea{
+	
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 10px;
+
+}
+
+.row{
+	padding-left: 40px;
+	margin: none;
+}
+
+/* FORMULARIO */
 
 .col-izquierda{
 
 	background-color: #C1C1C1;
-	height: 100%;
-	width: 500px;
+	height: 20%;
+	width: 450px;
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
-	position: absolute;
+	float: left;
+	margin-right: 7%;
 	
+}
+
+.container{
+	padding: 10px;
 }
 
 .crea-tweet{
@@ -31,10 +60,10 @@ body{
 	background-color: white;
 	padding: 10px;
 	border-radius: 8px;
-	margin-bottom: 60%;
+	margin-bottom: 2%;
 	margin-top: 20px;
-	position: absolute;
 
+	
 }
 
 .crea-tweet p{
@@ -62,15 +91,7 @@ body{
 	font-size: 40px;
 }
 
-button{
-	background-color: #FFBC2C;
-	color: white;
-	border-radius: 5px;
-	border: none;
-	font-family: 'Roboto', sans-serif;
 
-
-}
 
 .button-photo{
 	position: relative;
@@ -86,31 +107,261 @@ button{
 	margin-top: 50px;
 }
 
-input{
-	border-radius: 5px;
-	border: 1px solid #ccc;
+#imagen__user{
+	border: none;
+	height: 30px;
 }
 
-textarea{
-	
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	padding: 10px;
+#user__name{
+		width: 350px;
+	}
+
+#comentario__text{
+		width: 310px;
+	}
+
+
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+
+	.col-izquierda{
+
+	background-color: #C1C1C1;
+	height: 20%;
+	width: 450px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	float: left;
+	margin-right: 2%;
+	}
+
+	.container{
+		padding: 10px;
+	}
+
+	.crea-tweet{
+		width: 400px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 2%;
+		margin-top: 20px;
+	}
+
+	.crea-tweet p{
+		margin-left: 120px;
+		margin-bottom: 0px;
+		
+	}
+
+	.imagen-perfil{
+		height: 100px;
+		width: 100px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+	.glyphicon-camera{
+		width: 67px;
+		text-align: center;
+		top: 30px;
+		font-size: 40px;
+	}
+
+	.button-photo{
+		position: relative;
+		margin-top: 40px;
+		background-color: #DEDEDE;
+		border: 1px solid #ccc;
+		margin-left: 20px;
+		width: 180px;
+		clear: left;
+	}
+
+	.Formulario{
+		margin-top: 50px;
+	}
+
+	#imagen__user{
+		border: none;
+		height: 30px;
+	}
 
 }
+
+@media only screen and (min-width: 371px) and (max-width: 990px){
+
+  	.col-izquierda{
+
+	background-color: #C1C1C1;
+	height: 20%;
+	width: 450px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	float: left;
+	margin-right: 7%;
+	}
+
+	.container{
+		padding: 10px;
+	}
+
+	.crea-tweet{
+		width: 400px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 2%;
+		margin-top: 20px;
+	}
+
+	.crea-tweet p{
+		margin-left: 120px;
+		margin-bottom: 0px;
+		
+	}
+
+	.imagen-perfil{
+		height: 100px;
+		width: 100px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+	.glyphicon-camera{
+		width: 67px;
+		text-align: center;
+		top: 30px;
+		font-size: 40px;
+	}
+
+	.button-photo{
+		position: relative;
+		margin-top: 40px;
+		background-color: #DEDEDE;
+		border: 1px solid #ccc;
+		margin-left: 20px;
+		width: 180px;
+		clear: left;
+	}
+
+	.Formulario{
+		margin-top: 50px;
+	}
+
+
+	#imagen__user{
+		border: none;
+		height: 30px;
+	}
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 370px){
+
+  	.col-izquierda{
+
+		background-color: #C1C1C1;
+		height: 20%;
+		width: 320px;
+		box-shadow: 0 0 10px rgba(0,0,0,.5);
+		float: left;
+		margin-right: 1%;
+	}
+
+	.container{
+		padding: none;
+	}
+
+	.crea-tweet{
+		width: 220px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 2%;
+		margin-top: 20px;
+	}
+
+	.crea-tweet p{
+		margin-left: 70px;
+		margin-bottom: 0px;
+		
+	}
+
+	.imagen-perfil{
+		height: 45px;
+		width: 45px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+	.glyphicon-camera{
+		width: 5px;
+		text-align: center;
+		top: 13px;
+		font-size: 15px;
+	}
+
+	.button-photo{
+		position: relative;
+		margin-top: 40px;
+		background-color: #DEDEDE;
+		border: 1px solid #ccc;
+		margin-left: 20px;
+		width: 180px;
+		clear: left;
+	}
+
+	.Formulario{
+		margin-top: 50px;
+	}
+
+
+	#imagen__user{
+		border: none;
+		width: 180px;
+	}
+
+	#user__name{
+		width: 200px;
+	}
+
+	#comentario__text{
+		width: 200px;
+	}
+
+
+}
+
+
+/* TWEET QUE APARECE */
 
 .col-derecha{
-	margin-left: 530px;
+
+
 	float: left;
-	overflow: 
 
 }
 
-.row2 h1{
+.col-derecha h1{
 	color: #07ACAF;
+	
 }
 
-.new-tweet{
+.new__tweet{
 	width: 480px;
 	background-color: white;
 	padding: 10px;
@@ -120,9 +371,10 @@ textarea{
 	border: 1px solid #ccc;
 	float: left;
 	box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+	
 }
 
-.photo-tweet{
+.photo__tweet{
 	height: 80px;
 	width: 80px;
 	border: 1px solid #ccc;
@@ -155,3 +407,152 @@ i{
 	float: right;
 
 }
+
+.likesnumber-tweet{
+	width: 150px;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+		.new__tweet{
+		width: 410px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 60%;
+		margin-top: 0px;
+		border: 1px solid #ccc;
+		float: left;
+		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+		
+	}
+
+	.photo__tweet{
+		height: 50px;
+		width: 50px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+
+	.delete-perfil-tweet{
+		float: right;
+		margin-left: 10px;
+
+	}
+
+	.delete-text-tweet{
+		float: right;
+		margin-bottom: 16px;
+
+	}
+
+
+
+}
+
+
+@media only screen and (min-width: 371px) and (max-width: 990px){
+
+	h1{
+		font-size: 1.8em;
+	}
+
+	.new__tweet{
+		width: 410px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 60%;
+		margin-top: 0px;
+		border: 1px solid #ccc;
+		float: left;
+		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+		
+	}
+
+	.photo__tweet{
+		height: 50px;
+		width: 50px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+
+	.delete-perfil-tweet{
+		float: right;
+		margin-left: 10px;
+
+	}
+
+	.delete-text-tweet{
+		float: right;
+		margin-bottom: 16px;
+
+	}
+
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 370px){
+
+	h1{
+		font-size: 1.4em;
+	}
+
+	.new__tweet{
+		width: 230px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		margin-bottom: 60%;
+		margin-top: 10px;
+		border: 1px solid #ccc;
+		float: left;
+		box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+		
+	}
+
+	.photo__tweet{
+		height: 50px;
+		width: 50px;
+		border: 1px solid #ccc;
+		border-radius: 100px;
+		padding: none;
+		position: static;
+		float: left;
+		margin-bottom: 10px;
+
+	}
+
+
+	.delete-perfil-tweet{
+		float: right;
+		margin-left: 10px;
+
+	}
+
+	.delete-text-tweet{
+		float: right;
+		margin-bottom: 16px;
+
+	}
+
+}
+
+
+
+
+
+

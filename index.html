@@ -18,56 +18,60 @@
  	<script src="assets/js/script.js"></script>
 </head>
 <body>
-<section>
-<div class="col-izquierda col-lg-4 col-md-4 col-sm-12">
-	<div class="row">
-		<h1>¡¡CREA UN NUEVO TWEET!!</h1>
-			<form class="crea-tweet">
-				<div class="imagen-perfil col-lg-2">
-					 <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-				</div>
-				<div class="col-lg-4"><button class="button-photo ">Buscar imagen Perfil</button></div>
-				
-				<div class="Formulario col-lg-12">
-				<form>
-					Nombre:<br><input type="text" name="firstname" style="width: 350px";><br>
-              		Comentario:<br><textarea name="texto" rows="4" cols="20" style="height: 178px; width: 350px;"></textarea><br>
+
+
+<div class="row">
+	<section>
+
+		<div class= "col-izquierda col-lg-4 col-md-4 col-sm-12">
+			<h1>¡¡CREA UN NUEVO TWEET!!</h1>
+			<div class="container">
+				<form class="crea-tweet">
+					<div class="imagen-perfil col-lg-2">
+						 <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+					</div>
+					<input type="file" name="imagen-user" id="imagen__user" accept="image/*">
+			
+					Nombre:<br><input type="text" name="usuario_nombre" id="user__name" ;><br>
+              		Comentario:<br><textarea rows="4" cols="50" name="comentrio" form="usrform" id="comentario__text"></textarea><br>
             		<button class="button-createtweet">Crear nuevo tweet</button>
 				</form>
+			</div>	
+		</div>
+		
+
+	</section>
+
+
+	<section>
+
+		<div class="col-derecha col-lg-6 col-md-4 col-sm-12" >
+			<h1>TWEETS</h1>
+			<div class="new__tweet">
+				<div class="photo__tweet "></div>
+				<div class="textcol-tweet ">
+					<div class="name__tweet">
+					<p>NAME	</p>
 				</div>
-	</div>
-</div>
-</section>
+				<div class="comentario__tweet">
+					<p>text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quos nam. Sequi totam, ipsum. Eum, quam rem libero tempore sapiente consectetur iure dicta, a ipsa earum placeat, repellat culpa corporis.</p>
+					<button type="button" class="icon-heart-tweet col-lg-2">
+					<i class="glyphicon glyphicon-heart col-lg-2"></i></button>
 
 
-<section>
-<div class="col-derecha col-lg-6 col-md-4 col-sm-12">
-	<div class="row2 class="col-lg-4">
-		<div class="col-lg-4"><h1>TWEETS</h1></div>
-		<div class="new-tweet">
-			<div class="photo-tweet col-lg-2"></div>
-			<div class="textcol-tweet col-lg-8">
-				<div class="name-tweet">
-				<p>NAME	</p>
+					<div class="likesnumber-tweet col-lg-2"><p>LIKES</p></div>
+				</div>
+				<div class="button__tweet">
+					<button class="delete-perfil__tweet">Borrar foto Perfil</button>
+					<button class="delete-text__tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
+				</div>
+				</div>
 			</div>
-			<div class="text-tweet">
-				<p>text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quos nam. Sequi totam, ipsum. Eum, quam rem libero tempore sapiente consectetur iure dicta, a ipsa earum placeat, repellat culpa corporis.</p>
-				<button type="button" class="icon-heart-tweet col-lg-6">
-				<i class="glyphicon glyphicon-heart col-lg-4"></i></button>
 
-
-				<div class="likesnumber-tweet col-lg-4"><p>LIKES</p></div>
-			</div>
-			<div class="button-tweet">
-				<button class="delete-perfil-tweet">Borrar foto Perfil</button>
-				<button class="delete-text-tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
-			</div>
-			</div>
 		</div>
 
-	</div>
+	</section>
 </div>
-</section>
 	
 </body>
 </html>
