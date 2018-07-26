@@ -7,7 +7,7 @@ $(function () {
         event.preventDefault();
         var formData = {
             userName: $('#user__name').val(),
-            userEscrito: $('.comentario__text').val(),
+            userEscrito: $('#comentario__text').val(),
         }
         postCreate(formData);
         function postCreate(formData) {
@@ -64,7 +64,7 @@ $('body').on('click','.delete__tweet', function(){
           })
           .then((willDelete) => {
             if (willDelete) {
-                $(this).parent().fadeOut("slow").remove();
+                $(this).parent().parent().fadeOut("slow").remove();
               swal("Post eliminado", {
                 icon: "success",
               });
