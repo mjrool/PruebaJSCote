@@ -26,14 +26,14 @@
 		<div class= "col-izquierda col-lg-4 col-md-4 col-sm-12">
 			<h1>¡¡CREA UN NUEVO TWEET!!</h1>
 			<div class="container">
-				<form class="crea-tweet">
+				<form class="form__tweet">
 					<div class="imagen-perfil col-lg-2">
 						 <span class="glyphicon glyphicon-camera" aria-hidden="true" id="imagen__perfil"></span>
 					</div>
 					<input type="file" name="imagen-user" id="imagen__user" accept="image/*">
 			
-					Nombre:<br><input type="text" name="usuario_nombre" id="user__name" ;><br>
-              		Comentario:<br><textarea rows="4" cols="50" name="comentrio" form="usrform" id="comentario__text"></textarea><br>
+					<input type="text" name="usuario_nombre" id="user__name" placeholder="   Nombre:">
+              		<textarea rows="4" cols="50" name="comentrio" form="usrform" id="comentario__text" placeholder="Comentario"></textarea>
             		<button type="submit" value="Submit" id="button-createtweet">Crear nuevo tweet</button>
 				</form>
 			</div>	
@@ -45,19 +45,18 @@
 
 	<section>
 
-		<div class="col-derecha" style="display:none" >
-			<h1>TWEETS</h1>
-			<div class="new__tweet col-lg-6 col-md-4 col-sm-12">
+		<div class="col-derecha">
+			<h1>TWEETS</h1><br>
+			<div class="new__tweet" style="display:none" col-lg-6 col-md-4 col-sm-12">
 				<div class="photo__tweet ">
 				</div>
 					<div class="textcol-tweet ">
-						<p>NAME:</p>
 						<span class="name__tweet">Nombre</span><br>
 					</div>
 					<div>
-						<p>COMENTARIO:</p>
+						
 					<span class="comentario__tweet"></span>
-					
+
 					<button type="button" class="icon-heart-tweet col-lg-2">
 						<i class="glyphicon glyphicon-heart col-lg-2"></i>
 					</button>
@@ -65,8 +64,8 @@
 					</div>
 
 					<div class="button__tweet">
-						<button class="delete-perfil__tweet">Borrar foto Perfil</button>
-						<button class="delete-text__tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
+						
+						<button class="delete__tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
 					</div>
 				
 			</div>
