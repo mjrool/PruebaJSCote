@@ -27,53 +27,42 @@
 			<h1>¡¡CREA UN NUEVO TWEET!!</h1>
 			<div class="container">
 				<form class="form__tweet">
-					<div class="imagen-perfil col-lg-2">
-						 <span class="glyphicon glyphicon-camera" aria-hidden="true" id="imagen__perfil"></span>
-					</div>
+					<label>
+						<img src="https://clubdeescritura.com/wp-content/uploads/users-56/user-55640/2017/05/photo-300x300.png" alt="" class="imagen-perfil">
+					</label>
 					<input type="file" name="imagen-user" id="imagen__user" accept="image/*">
 			
 					<input type="text" name="usuario_nombre" id="user__name" placeholder="   Nombre:">
-              		<textarea rows="4" cols="50" name="comentrio" form="usrform" id="comentario__text" placeholder="Comentario"></textarea>
+              		<textarea rows="4" cols="50" name="comentario" form="usrform" id="comentario__text" placeholder="Comentario"></textarea>
             		<button type="submit" value="Submit" id="button-createtweet">Crear nuevo tweet</button>
 				</form>
 			</div>	
 		</div>
-		
-
-	</section>
-
-
+	</section>	
 	<section>
-
-		<div class="col-derecha">
+		<div class="col-derecha" style="display:none" >
 			<h1>TWEETS</h1><br>
-			<div class="new__tweet" style="display:none" col-lg-6 col-md-4 col-sm-12">
-				<div class="photo__tweet ">
-				</div>
-					<div class="textcol-tweet ">
-						<span class="name__tweet">Nombre</span><br>
-					</div>
-					<div>
-						
+			<div class="new__tweet"   col-lg-6 col-md-4 col-sm-12">
+				<img src="photo-300x300 (1).png" alt="" class="photo__tweet">
+					<b>
+						<span class="name__tweet">Desconocido</span>
+					</b>
+					
+					<div>	
 					<span class="comentario__tweet"></span>
 
-					<button type="button" class="icon-heart-tweet col-lg-2">
-						<i class="glyphicon glyphicon-heart col-lg-2"></i>
+					<button type="button" class="icon-heart-tweet">
+						<i class="fas fa-heart"></i>
+					<span class="num">0</span>
 					</button>
-						<span class="num col-lg-2"><p>0</p></span>
+					<button class="delete__tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
 					</div>
-
-					<div class="button__tweet">
-						
-						<button class="delete__tweet"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> borrar tweet</button>
-					</div>
-				
 			</div>
 
 		</div>
 
 	</section>
 </div>
-	
+		
 </body>
 </html>

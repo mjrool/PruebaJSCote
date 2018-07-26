@@ -1,5 +1,3 @@
-// alert("Hello! I am an alert box!!");
-
 $(function () {
 
    // INFO FORMULARIO   
@@ -49,12 +47,11 @@ $(function () {
    
 // REINICIAR FORMULARIO
 
-    $('form').on('submit', function (event) {
-        $('form')[0].reset();
-        $('.comentario__tweet').val('')
+    $('form__tweet').on('submit', function (event) {
+        $('form__tweet')[0].reset();
+        $('.new__tweet').val('')
     });
-
-
+    
     // BORRAR TWEET
 
 $('body').on('click','.delete__tweet', function(){
@@ -79,7 +76,7 @@ $('body').on('click','.delete__tweet', function(){
 
         });
 
-    // CORAZON LIKE
+// CORAZON LIKE
 
     $('body').on('click', '.icon-heart-tweet', function () {
         $(this).children('i').css('color', 'red');
@@ -89,3 +86,4 @@ $('body').on('click','.delete__tweet', function(){
     })
 
 });
+
