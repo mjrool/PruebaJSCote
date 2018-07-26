@@ -22,12 +22,18 @@ $(function () {
             if (file) {
                 reader.readAsDataURL(file);
             } else {
-                swal('Te falta la imagen :(');
+                swal('Te falta la imagen');
                 return;
             }
             $('.row').after(post);
             $('.imagen-perfil').attr('src', '');
         }
+
+        // REINICIAR FORMULARIO
+
+            $('.form__tweet')[0].reset();
+            $('#comentario__text').val("");
+
 
     })
 
@@ -47,10 +53,9 @@ $(function () {
    
 // REINICIAR FORMULARIO
 
-    $('form__tweet').on('submit', function (event) {
-        $('form__tweet')[0].reset();
-        $('.new__tweet').val('')
-    });
+    // $('.form__tweet').on('submit', function (event) {
+    //     $('.form__tweet')[0].reset();
+    // });
     
     // BORRAR TWEET
 
@@ -83,7 +88,9 @@ $('body').on('click','.delete__tweet', function(){
         numero = parseInt($(this).text())
         numero = numero + 1;
         $(this).children('span').text(numero);
-    })
+    });
+
+
 
 });
 
