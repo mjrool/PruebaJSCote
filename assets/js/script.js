@@ -53,14 +53,7 @@ $(function () {
         $('form')[0].reset();
         $('.comentario__tweet').val('')
     });
-    // CORAZON LIKE
 
-    $('body').on('click', '.icon-heart-tweet', function () {
-        $(this).children('i').css('color', 'red');
-        numero = parseInt($(this).text())
-        numero = numero + 1;
-        $(this).children('span').text(numero);
-    })
 
     // BORRAR TWEET
 
@@ -85,5 +78,14 @@ $('body').on('click','.delete__tweet', function(){
 
 
         });
+
+    // CORAZON LIKE
+
+    $('body').on('click', '.icon-heart-tweet', function () {
+        $(this).children('i').css('color', 'red');
+        numero = parseInt($(this).text())
+        numero = numero + 1;
+        $(this).children('span').text(numero);
+    })
 
 });
