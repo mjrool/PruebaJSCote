@@ -38,6 +38,20 @@ textarea{
 	margin: none;
 }
 
+.top{
+	background-color: #6E5090;
+	background-size: cover;
+	height: 70px;
+	margin-bottom: 20px;
+}
+
+.top p{
+	color: white;
+	font-size: 30px;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
 
 /* FORMULARIO */
 
@@ -362,7 +376,7 @@ textarea{
 }
 
 .new__tweet{
-	width: 480px;
+	width: 60%;
 	background-color: white;
 	padding: 10px;
 	border-radius: 8px;
