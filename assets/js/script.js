@@ -11,7 +11,7 @@ $(function () {
         }
         postCreate(formData);
         function postCreate(formData) {
-            var post = $('.col-derecha:first').clone().css("display","block");
+            var post = $('.new__tweet').clone().css("display","block");
             post.find('.name__tweet').text(formData.userName);
             post.find('.comentario__tweet').text(formData.userEscrito);
             var file = document.getElementById('imagen__user').files[0];
@@ -25,14 +25,15 @@ $(function () {
                 swal('Te falta la imagen');
                 return;
             }
-            $('.row').after(post);
-            $('.imagen-perfil').attr('src', '');
+            $('.col-derecha').append(post);
+            $('.imagen-perfil').attr('src', 'https://clubdeescritura.com/wp-content/uploads/users-56/user-55640/2017/05/photo-300x300.png');
         }
 
         // REINICIAR FORMULARIO
 
             $('.form__tweet')[0].reset();
             $('#comentario__text').val("");
+
 
 
     })
